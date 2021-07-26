@@ -21,7 +21,9 @@ We will follow the two-sampled t-test which is discussed in the above link. In t
 In the experiment, the official null hypothesis is stated as there is no real difference in means of `sepal width` data sets for the two species. The alternative hypothesis: there is a difference.
 
 The code used for the demonstration is shown below.
-```t.test(Sepal.Width ~ Species,
+
+```
+t.test(Sepal.Width ~ Species,
        iris,
        Species %in% c("versicolor", "virginica"),
        var.equal = T)
